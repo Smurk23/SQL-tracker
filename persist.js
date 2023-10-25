@@ -10,6 +10,11 @@ class Persist {
             'SELECT DEPARTMENT.ID, DEPARTMENT.NAME FROM DEPARTMENT;'  
         );
     }
+    getAllEmployees() {
+        return this.db.promise().query(
+            'SELECT EMPLOYEE.ID, EMPLOYEE.FIRST_NAME, EMPLOYEE.LAST_NAME, EMPLOYEE.MANAGER_ID;'
+        );
+    }
 }
 
 module.exports = new Persist(db);
