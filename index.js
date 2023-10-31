@@ -89,6 +89,15 @@ function viewAllEmployees() {
         console.table(results)
     });
 }
+
+function addRole() {
+    
+}
+
+function addEmployee() {
+    inquirer.prompt
+}
+
 function exitTheProgram() {
     process.exit();
 }
