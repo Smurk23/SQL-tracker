@@ -5,10 +5,8 @@ const db = mysql.createConnection(
       user: 'root',
       password: 'uconn',
       database: 'company_db'
-    },
-    console.log(`Connected to the company_db database.`)
-  );
-  db.connect(function (error){
-    if (error) throw error;
-  })
+    })
+  // db.createConnection(function (error){
+  //   if (error) throw error;
+  // })
   module.exports = db
